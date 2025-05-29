@@ -1,0 +1,1 @@
+﻿The timeout for the request in seconds. When timeout is up CancelRequest() is called.

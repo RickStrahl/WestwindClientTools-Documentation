@@ -1,0 +1,1 @@
+﻿Retrieves an index value from a key.

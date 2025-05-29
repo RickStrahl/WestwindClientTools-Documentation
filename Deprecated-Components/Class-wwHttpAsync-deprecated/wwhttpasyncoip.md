@@ -1,0 +1,1 @@
+﻿wwIPStuff object used to create connection and file access. You can use this object to set custom options prior to calling startrequest.

@@ -1,0 +1,1 @@
+﻿After the request is complete cResultBuffer will contain the HTTP result.

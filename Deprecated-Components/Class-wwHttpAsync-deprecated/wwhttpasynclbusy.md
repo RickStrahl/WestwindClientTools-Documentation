@@ -1,0 +1,1 @@
+﻿Determines whether the request is still running.

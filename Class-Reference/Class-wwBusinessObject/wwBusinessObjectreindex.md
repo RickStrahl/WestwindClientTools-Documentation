@@ -1,0 +1,1 @@
+﻿Used to PACK and Reindex the data files. Typically you'll want to subclass this method and add your own code to cause tables to reindex. You can pass an extra parameter of .T. to have reindex return you a string of the index commands for the currently active indexes in the table in the vResult property.

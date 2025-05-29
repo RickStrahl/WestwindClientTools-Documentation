@@ -1,0 +1,1 @@
+﻿Ftp class that uses the .NET [SSH.NET](https://github.com/sshnet/SSH.NET) library to provideFTP and FTPS (FTP over TLS). This class **does not support SFTPS**.

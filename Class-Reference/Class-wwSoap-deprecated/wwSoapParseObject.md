@@ -1,0 +1,3 @@
+﻿This low level method parses an object based on the WSDL definition. A new empty object is created and the object is created on the fly and returned to you.
+
+In most cases you don't have to call this method explicitly as a wwSOAP call will automatically try to convert the object. However, you can apply this method to a raw DOM result in the case of embedded objects that wwSOAP may not be able to parse automatically.

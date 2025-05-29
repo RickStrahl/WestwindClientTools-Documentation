@@ -1,0 +1,1 @@
+﻿Allows adding a POST variables to the request. Post values in key value pairs.

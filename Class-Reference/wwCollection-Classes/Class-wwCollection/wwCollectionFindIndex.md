@@ -1,0 +1,1 @@
+﻿Finds the first matching item in the array by its value and returns the index. If not found 0 is returned.Collections are expected to contain items of the same type or else you will get type mismatch errors.String values are searched in a **case insensitive** manner.

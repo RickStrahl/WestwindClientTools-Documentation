@@ -1,0 +1,1 @@
+﻿Packs and reindexes the file specified in the cFixedFileName. This method works only if the cFixedFilename property is set and only if an exclusive lock can be set on the table.

@@ -1,0 +1,1 @@
+﻿Allows you to cancel a request that's running.

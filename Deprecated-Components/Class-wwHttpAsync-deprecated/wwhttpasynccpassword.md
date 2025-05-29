@@ -1,0 +1,1 @@
+﻿Password for Basic Authentication requests on the server.

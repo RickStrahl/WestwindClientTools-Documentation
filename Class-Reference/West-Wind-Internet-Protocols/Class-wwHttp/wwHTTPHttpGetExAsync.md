@@ -1,0 +1,1 @@
+﻿Allows you to retrieve HTTP content asynchronously and store the result value into a file. Client code can poll for the result file to retrieve the Async content.> This functionality has been deprecated. It still works f

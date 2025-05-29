@@ -1,0 +1,1 @@
+﻿Size of the result buffer. Set this to 0 to allow any size buffer to be returned.
