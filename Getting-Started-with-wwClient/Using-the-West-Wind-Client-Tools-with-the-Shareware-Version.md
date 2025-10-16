@@ -1,4 +1,4 @@
-The shareware version of the West Wind Client tools ships with a pre-compiled version of the classes in a FoxPro `.app` file - `wclient.app`. This `.app` library contains all the library files and running the the app loads all included libraries into memory at once.
+﻿The shareware version of the West Wind Client tools ships with a pre-compiled version of the classes in a FoxPro `.app` file - `wclient.app`. This `.app` library contains all the library files and running the the app loads all included libraries into memory at once.
 
 > #### @icon-warning Samples and Load Differences
 > Note: The shareware version is loaded differently than the full version, so you will need to adjust the examples in this help file to pre-load all libraries. 

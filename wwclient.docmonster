@@ -23748,6 +23748,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 5,
+      "isExpanded": true,
       "updated": "2025-06-02T17:56:54.754772-07:00",
       "helpId": "1294703",
       "classInfo": {
@@ -23771,7 +23772,7 @@
           "remarks": "This class does not support SFTP (secure FTP over SSL)",
           "example": "",
           "sortOrder": 80,
-          "updated": "2025-05-29T00:00:00Z",
+          "updated": "2025-10-16T15:04:31.1313009-07:00",
           "helpId": "678",
           "classInfo": {
             "memberName": "",
@@ -26507,6 +26508,6 @@
       "username": "rstrahl",
       "maxUploadConnections": 10
     },
-    "lastTopicId": "_51f1bswlk"
+    "lastTopicId": "_6wt0q6xmc"
   }
 }
