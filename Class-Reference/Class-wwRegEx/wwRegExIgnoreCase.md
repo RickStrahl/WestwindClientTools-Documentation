@@ -1,1 +1,0 @@
-﻿Determines whether the RegEx expression is case sensitive.

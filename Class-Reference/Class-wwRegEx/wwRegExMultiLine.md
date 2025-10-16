@@ -1,1 +1,0 @@
-﻿Determines whether the RegEx expression works on multiple lines of text.

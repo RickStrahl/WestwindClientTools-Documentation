@@ -1,1 +1,0 @@
-﻿Sends data to a socket on the server.

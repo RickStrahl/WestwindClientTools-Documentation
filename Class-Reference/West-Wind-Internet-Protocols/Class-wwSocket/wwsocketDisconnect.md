@@ -1,1 +1,0 @@
-﻿Disconnects from a socket on the server.

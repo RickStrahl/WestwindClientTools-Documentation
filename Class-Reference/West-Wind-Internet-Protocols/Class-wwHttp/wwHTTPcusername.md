@@ -1,1 +1,0 @@
-﻿Username for log in operations (FTP and HTTP).

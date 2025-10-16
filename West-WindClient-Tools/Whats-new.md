@@ -1,4 +1,45 @@
-﻿### Version 8.1
+﻿## Version 8.4
+<small>July 28th, 2025</small>
+
+* **wwDotnetBridge: Unblock all DLLs loaded**  
+wwDotnetBridge has always unblocked its own `wwDotnetBridge.dll`, but now also unblocks any DLLs that are loaded with `LoadAssembly()`. This removes the requirement to explicitly unblock files that are downloaded from the Internet and tagged by Windows as blocked.
+
+* **Fix: Bug with [wwHttp::AddPostKey()](dm-topic://_5w50q81ld) with Content Types**  
+Fix a bug where passing the content type would throw an exception due to a missing type check.
+
+* **Breaking Change: Remove redundant llIsFile parameter from [wwHttp::AddPostFile()](dm-topic://_0jj1afxk3)**{.text-danger}    
+When this method was introduced it retained the same syntax as AddPostKey() and was meant to be a direct replacement. That makes little sense however, and the parameter signature is slightly different anyway. The updated syntax only provides the parameters actually needed.  
+<small>`AddPostKey(tcKey, tcFilename, tcPostedFilename, tcContentType, tcExtraHeaders)`</small>
+
+
+### Version 8.3
+<small>May 30th, 2025</small>
+
+* **wwJsonSerializer Support for Output larger than 16mb**  
+wwJsonSerializer can now serialize JSON to strings larger than FoxPro's 16mb string limit. While now supported, it's still not recommended to generate JSON this large. The process is both slow and eventually increases memory pressure in FoxPro's internal that can quickly lead to out of memory errors. Use with care!
+
+* **[New wwHeap Class](VFPS://Topic/_73917NS6A)**  
+Added a new wwHeap class that allows fast access to byte and character data including traversing the buffer byte by byte or character by character **fast** - unlike[ SubString() which is dreadfully slow](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=962). Useful if you're trying to build parsers or encoders where thatread text or data character by character. 
+
+* **[wwDotnetBridge .NET Event Optimization](dm-topic://_57q019pw0)**  
+Thanks to a pull request from Christof Wollenhaupt .NET events are now selectively bound, removing the requirement of having to bind all events. You now can implement as many of the events that you are using and no more.
+
+* **[wwDotnetBridge.GetField()](VFPS://Topic/_70Y19T8WR) and [wwDotnetBridge.SetField()](VFPS://Topic/_70Y19UN5Y)**  
+Added explicit methods to get and set `public` .NET field values. It's not recommended that you access fields directly but we've added support for it if you really must. Note: Only works on `public` fields.
+
+* **Fix: File Uploads with extended file names in wwHttp**  
+Fix issue where filenames that contain extended characters where not properly UTF-8 when sending with [wwHttp.AddPostFile()](dm-topic://_0jj1afxk3).
+
+* **Fix: [wwhttp::AddPostFile](dm-topic://_0jj1afxk3) without an Explicit download Filename**  
+Fix issue where if you didn't specify the explicit filename in the parameter list the upload fails with some servers. Fix adds the filename implicitly based on the uploaded filename. Note: if you send binary/string buffers you still need to explicitly provide the file name both in `AddPostFile()` and `AddPostKey()` when uploading files. Fixed.
+
+* **Fix: Old wwFtp Class Compatibility**  
+Fixed a bug in the deprecated wwSftp class that caused download operations to fail.  
+*We highly recommend you switch to the new `wwSftpClient` (Sftp)  or `wwFtpClient` (ftp or ftps) for future compatibility - the old wwFtp and wwSftp classes will not be updated in the future* 
+
+
+
+### Version 8.1
 <small>October 1st, 2024</small>
 
 * **[ComValue.SetValueFromCreateGenericInstance() with no Parameters](VFPS://Topic/_5C51DGO92)**  

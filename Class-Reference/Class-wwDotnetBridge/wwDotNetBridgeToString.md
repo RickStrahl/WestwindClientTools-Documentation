@@ -1,1 +1,0 @@
-﻿Returns the result from the `.ToString()` method reliably. `ToString()` often is overridden and so not directly accessible via direct COM access. This method internally calls `InvokeMethod()` to call the `ToString()`.

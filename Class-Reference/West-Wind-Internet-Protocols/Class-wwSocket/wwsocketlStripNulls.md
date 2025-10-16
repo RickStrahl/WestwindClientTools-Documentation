@@ -1,1 +1,0 @@
-﻿Strips CHR(0) NULLS from the received buffer. Otherwise the full buffer will be passed back which is padded with CHR(0)'s.

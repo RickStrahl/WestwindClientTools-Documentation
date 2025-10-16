@@ -1,1 +1,0 @@
-﻿Tests a regEx expression.

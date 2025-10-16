@@ -1,1 +1,0 @@
-﻿Connects to a socket on a server.
